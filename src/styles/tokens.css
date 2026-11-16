@@ -1,0 +1,46 @@
+/* Design tokens: one font (Poppins), a calm blue accent, frosted-glass surfaces on a soft gradient. */
+:root {
+  --font: 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --bg: #eef2fb;
+  --bg-blob-1: #c7d7fe;
+  --bg-blob-2: #bfeee6;
+  --bg-blob-3: #e3d5ff;
+
+  --text: #1b2438;
+  --text-soft: #4d5872;
+  --text-faint: #8590a8;
+
+  --accent: #2f6bf1;
+  --accent-strong: #1f55d6;
+  --accent-soft: rgba(47, 107, 241, 0.12);
+  --danger: #e5484d;
+  --danger-soft: rgba(229, 72, 77, 0.12);
+  --success: #18a058;
+
+  /* glass */
+  --glass: rgba(255, 255, 255, 0.58);
+  --glass-strong: rgba(255, 255, 255, 0.82);
+  --glass-border: rgba(255, 255, 255, 0.75);
+  --glass-blur: blur(18px) saturate(160%);
+  --line: rgba(27, 36, 56, 0.08);
+  --shadow: 0 8px 30px rgba(31, 52, 102, 0.08);
+  --shadow-lg: 0 24px 60px rgba(31, 52, 102, 0.18);
+
+  /* status & priority */
+  --status-todo: #8a94ad;
+  --status-progress: #2f6bf1;
+  --status-review: #8b5cf6;
+  --status-blocked: #e5484d;
+  --status-done: #18a058;
+  --prio-urgent: #e5484d;
+  --prio-high: #f08c00;
+  --prio-normal: #2f6bf1;
+  --prio-low: #8a94ad;
+
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --sidebar-w: 240px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}

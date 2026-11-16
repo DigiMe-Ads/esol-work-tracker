@@ -1,0 +1,33 @@
+/* Team dashboard and employee management. */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin-bottom: 22px; }
+.stat { display: flex; align-items: center; gap: 14px; padding: 18px; border-radius: var(--radius); }
+.stat-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; background: color-mix(in srgb, var(--pill) 14%, transparent); color: var(--pill); }
+.stat-value { font-size: 24px; font-weight: 700; line-height: 1.1; }
+.stat-label { font-size: 12px; color: var(--text-soft); }
+
+.people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.person-card { display: flex; flex-direction: column; gap: 14px; padding: 18px; border-radius: var(--radius); cursor: pointer; transition: transform 0.15s var(--ease), box-shadow 0.15s; }
+.person-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+.person-card--inactive { opacity: 0.6; }
+.status-bar { display: flex; height: 8px; border-radius: 999px; overflow: hidden; background: rgba(27, 36, 56, 0.06); }
+.status-bar span { height: 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px; color: var(--text-soft); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+
+.table-wrap { border-radius: var(--radius); overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; }
+.table th { padding: 12px 16px; font-size: 12px; font-weight: 600; text-align: left; color: var(--text-faint); white-space: nowrap; }
+.table td { padding: 12px 16px; border-top: 1px solid var(--line); vertical-align: middle; }
+.table tr:hover td { background: rgba(255, 255, 255, 0.45); }
+.table .actions { display: flex; justify-content: flex-end; gap: 4px; }
+.role-tag { font-size: 12px; font-weight: 500; padding: 2px 8px; border-radius: 6px; background: rgba(27, 36, 56, 0.06); }
+.role-tag--admin { background: var(--accent-soft); color: var(--accent); }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+@media (max-width: 640px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .table .hide-sm { display: none; }
+  .table .actions { gap: 0; }
+  .table .icon-btn { width: 28px; height: 28px; }
+  .table th, .table td { padding: 10px 10px; }
+}
